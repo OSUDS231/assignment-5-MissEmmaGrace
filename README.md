@@ -142,6 +142,7 @@ ValueError: number of fields does not match dictionary keys.
 
 ***Hint.***
 - Use `open(filename, "r")` to open the file and a `for` loop to iterate over its lines.
+- The file may contain empty lines at the end. Before processing each line, check whether it is empty after stripping — if so, skip it.
 - To convert the completed dictionary to a DataFrame, use `pd.DataFrame(data_dict)`.
 
 
@@ -159,7 +160,7 @@ With the data loaded as a DataFrame, you can now write a function to extract sum
 
 ***Function specification.***
 - Input: `data` (DataFrame), `species` (str), `measurement` (str)
-- Return: the mean value of the specified measurement for the specified species (float)
+- Return: the mean value of the specified measurement for the specified species (float or np.float64)
 
 ***Function demonstration.***
 
