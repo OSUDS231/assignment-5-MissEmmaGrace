@@ -64,5 +64,3 @@ def species_mean(data, species, measurement):
     #Returns mean value of measurement
     return new_df[measurement].mean()
 
-df = load_data('iris.txt')
-print(species_mean(df, 'Iris-setosa', 'sepal_length'))
